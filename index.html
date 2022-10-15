@@ -1,0 +1,842 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Herreria Olivos</title>
+
+    <!-- font-1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font-2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animaciones.css">
+</head>
+
+
+
+
+<body class="d-flex flex-column align-items-center container-fluid vh-100">
+
+    <header class="container-fluid  ">
+        <div class="row">
+
+            <div class="col-5 col-md-7 col-lg-5 logo d-flex justify-content-md-center">
+                <a href="#home" class="d-flex flex-column align-items-center font-2 ">
+                    <img class="d-block d-lg-block" src="/imagenes/loguito.png" alt="logo">
+                    La Herrería Olivos
+                </a>
+            </div>
+
+            <div class="d-flex justify-content-center  d-lg-none col-7 col-md-5">
+                <div id="menu-icon">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.216 226.216"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 226.216 226.216">
+                        <g>
+                            <g>
+                                <path
+                                    d="M8.701,43.503h208.814c5.22,0,8.701-3.48,8.701-8.701s-3.48-8.701-8.701-8.701H8.701C3.48,26.102,0,29.582,0,34.802    S3.48,43.503,8.701,43.503z" />
+                                <path
+                                    d="m217.515,104.407h-208.814c-5.22,0-8.701,3.48-8.701,8.701s3.48,8.701 8.701,8.701h208.814c5.22,0 8.701-3.48 8.701-8.701s-3.481-8.701-8.701-8.701z" />
+                                <path
+                                    d="m217.515,182.713h-208.814c-5.22,0-8.701,3.48-8.701,8.701s3.48,8.701 8.701,8.701h208.814c5.22,0 8.701-3.48 8.701-8.701s-3.481-8.701-8.701-8.701z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <nav class="d-none d-lg-flex  col-lg-7">
+                <ul class="d-flex  font-2">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!-- menu mobile -->
+    <nav class="row d-flex  d-lg-none  menu" id="menu">
+        <ul class="d-flex flex-column font-2">
+            <li><a href="#home" onclick="menu_off()">Home</a></li>
+            <li><a href="#nosotros" onclick="menu_off()">Nosotros</a></li>
+            <li><a href="#servicios" onclick="menu_off()">Servicios</a></li>
+            <li><a href="#contacto" onclick="menu_off()">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main id="home">
+
+
+        <!-- HOME - CAROUSEL -->
+        <section class="row d-flex flex-column  flex-lg-row justify-content-center align-items-center home">
+
+            <article class="col-11 col-md-9  col-lg-9 col-xxl-8 carousel home-img d-flex flex-column align-items-center ">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/imagenes/puertas/vidrio1b.jpg" class="d-flex" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/imagenes/escaleras/escalera3.jpg" class="d-flex" alt="...">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/imagenes/mesas/mesa4.jpg" class="d-flex" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="col-12  pt-3 pt-lg-2 home-info" id="animacion-home">
+
+                <div class="text-center d-flex justify-content-md-center align-content-center">
+                    <p class="font-2 ">- Un oficio artesanal -</p>
+<!-- 
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="mdi-hammer-wrench" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.11L5.63 12.81L2.11 9.25L2.81 8.55H5.62L4.22 7.14L7.78 3.58C8.95 2.41 10.83 2.41 12 3.58L9.89 5.74L11.3 7.14L10.59 7.85L12.38 9.63L14.2 7.75C14.06 7.42 14 7 14 6.63C14 4.66 15.56 3.11 17.5 3.11C18.09 3.11 18.61 3.25 19.08 3.53L16.41 6.2L17.91 7.7L20.58 5.03C20.86 5.5 21 6 21 6.63C21 8.55 19.45 10.1 17.5 10.1Z" />
+                    </svg> -->
+                </div>
+            </article>
+        </section>
+
+
+        <!-- Presupuesto -->
+        <section class="row presupuesto--">
+            <article class="col-12">
+                <div class="d-flex flex-column align-items-center">
+
+                    <svg version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="56px" height="65px" viewBox="0 0 56 65" enable-background="new 0 0 56 65"
+                        xml:space="preserve">
+                        <g id="Page-1" sketch:type="MSPage">
+                            <g id="Clipboard-checked" transform="translate(1.000000, 1.000000)"
+                                sketch:type="MSLayerGroup">
+                                <g id="Group" sketch:type="MSShapeGroup">
+                                    <path id="Shape" fill="none"  stroke-width="2" d="M44,57.1v3c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2v-51
+                                   c0-1.1,0.9-2,2-2h10.9" />
+                                    <path id="Shape_1_" fill="none"  stroke-width="2"
+                                        d="M30.8,7.1H42c1.1,0,2,0.9,2,2v39.8" />
+                                    <path id="Shape_3_" fill="none"  stroke-width="2"
+                                        d="M38.3,56.1H7c-1.1,0-2-0.9-2-2v-40c0-1.1,0.9-2,2-2h6" />
+                                    <path id="Shape_4_" fill="none"  stroke-width="2"
+                                        d="M30.8,12.1h6.3c1.1,0,2,0.9,2,2v34.2" />
+                                    <path id="Shape_2_" fill="none"  stroke-width="2"
+                                        stroke-linejoin="round"
+                                        d="M28.8,5.1l-3-1c0-2.2-1.8-4-4-4
+                                   s-4,1.8-4,4l-3,1c-1.1,0-2,0.9-2,2v5c0,1.1,0.9,2,2,2h13.9c1.1,0,2-0.9,2-2v-5C30.8,6,29.9,5.1,28.8,5.1L28.8,5.1z" />
+                                    <path id="Shape_5_" fill="none"  stroke-width="2"
+                                        d="M10,22.1h20.8" />
+                                    <path id="Shape_6_" fill="none"  stroke-width="2"
+                                        d="M10,28.1h11.8" />
+                                    <path id="Shape_7_" fill="none" stroke-width="2"
+                                        d="M10,33.1h22.8" />
+                                    <path id="Shape_8_" fill="none" stroke-width="2"
+                                        d="M10,40.1h16.8" />
+                                    <path id="Shape_9_" fill="none" stroke-width="2"
+                                        d="M23,48.1h9.8" />
+                                </g>
+                                <path id="Shape_10_" sketch:type="MSShapeGroup" fill="none" 
+                                    stroke-width="2" d="M53.7,46.1l-2.8-2.8
+                               c-0.4-0.4-1-0.4-1.4,0l-7.7,7.8l-3.5-3.5c-0.4-0.4-1-0.4-1.4,0l-2.8,2.8c-0.4,0.4-0.4,1,0,1.4l7,7.1c0.4,0.4,1,0.4,1.4,0
+                               l11.2-11.3C54.1,47.1,54.1,46.5,53.7,46.1L53.7,46.1z" />
+                            </g>
+                        </g>
+                    </svg>
+
+                    <p  class="font-2 text-center">Presupuesto <br> sin cargo</p>
+                    <a href="#contacto"class="font-2">Aquí</a>
+
+                </div>
+            </article>
+        </section>
+
+
+        <!-- NOSOTROS -->
+        <section class="row nosotros d-flex justify-content-center" id="nosotros">
+
+            <div class="col-12 d-flex flex-column align-items-center justify-content-center font-2 nosotros-titulo ">
+
+                <h2 class="animacionTitulo text-center" > La Herrería <br> Olivos</h2>
+                <!-- <p class="font-2">La Herrería Olivos</p> -->
+
+                <svg class="herramientas-svg bg-white" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-hammer-wrench" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.11L5.63 12.81L2.11 9.25L2.81 8.55H5.62L4.22 7.14L7.78 3.58C8.95 2.41 10.83 2.41 12 3.58L9.89 5.74L11.3 7.14L10.59 7.85L12.38 9.63L14.2 7.75C14.06 7.42 14 7 14 6.63C14 4.66 15.56 3.11 17.5 3.11C18.09 3.11 18.61 3.25 19.08 3.53L16.41 6.2L17.91 7.7L20.58 5.03C20.86 5.5 21 6 21 6.63C21 8.55 19.45 10.1 17.5 10.1Z" />
+                </svg>
+            </div>
+
+            <article class="col-12 d-flex flex-column-reverse flex-lg-row-reverse">
+
+                <div class="d-flex flex-column  col-12 col-lg-5 col-xl-5  nosotros-texto font-2">
+                    <p>La Herrería Olivos es un emprendimiento autogestivo que surgió en 2017.</p>
+                    <p>
+                        Nos especializamos en escaleras, frente de rejas, puertas, techos, vidrio repartido y muebles de
+                        hierro y madera a medida.
+                    </p>
+                    <p>Nuestro trabajo refleja nuestro compromiso con cada cliente.</p>
+                    <p>
+                        Brindamos una atención personalizada que nos permite tener una visión más amplia del proceso y
+                        poder asi dar soluciones.
+                    </p>
+                    <p>Cada trabajo y pedido es único.</p>
+
+                </div>
+
+                <div class="d-flex justify-content-center col-12 col-lg-7 col-xl-7 nosotros-img">
+                    <div class="d-flex justify-content-center">
+                        <img src="/imagenes/nosotros4.png" id="nosotros-img1">
+                    </div>
+                    <div class="d-flex justify-content-center img-2">
+                        <img src="/imagenes/nosotros3.png" id="nosotros-img2">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <!-- SERVICIOS -->
+        <section class="row servicios d-flex justify-content-center align-items-center justify-content-lg-evenly"
+            id="servicios">
+
+            <div
+                class="col-12 d-flex flex-column align-items-center justify-content-center servicios-titulo font-2 mb-5">
+                <div class="d-flex flex-column  align-items-center">
+
+                    <h2 class="animacionTitulo"> SERVICIOS </h2>
+
+                </div>
+                <div class="font-2 text-center">
+                    <p>Algunos de nuestros trabajos:</p>
+
+                    <!-- <svg class="herramientas-svg" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-hammer-wrench" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.11L5.63 12.81L2.11 9.25L2.81 8.55H5.62L4.22 7.14L7.78 3.58C8.95 2.41 10.83 2.41 12 3.58L9.89 5.74L11.3 7.14L10.59 7.85L12.38 9.63L14.2 7.75C14.06 7.42 14 7 14 6.63C14 4.66 15.56 3.11 17.5 3.11C18.09 3.11 18.61 3.25 19.08 3.53L16.41 6.2L17.91 7.7L20.58 5.03C20.86 5.5 21 6 21 6.63C21 8.55 19.45 10.1 17.5 10.1Z" />
+                    </svg> -->
+                </div>
+            </div>
+
+            <!--Escaleras  -->
+            <article class="col-12 col-lg-6   font-2">
+                <div>
+                    <a id="servicios-img1" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="d-flex justify-content-center">
+                        <div class="opacity">
+                            <img src="/imagenes/escaleras/escalera1.jpg">
+                        </div>
+
+                        <p>Escaleras</p>
+
+                    </a>
+                </div>
+            </article>
+
+            <!-- Modal Escaleras -->
+            <!-- <div class="modal fade col-12 col-lg-12" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class=" d-flex flex-column align-items-center justify-content-center flex-wrap galeria">
+
+                                <article class="col-12 col-lg-12">
+                                    <div >
+                                        <img class="modal-img" src="/imagenes/escaleras/escalera1.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div >
+                                        <img class="modal-img" src="/imagenes/escaleras/escalera2.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div>
+                                        <img class="modal-img" src="/imagenes/escaleras/escalera3.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div >
+                                        <img class="modal-img" src="/imagenes/escaleras/escalera4.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div >
+                                        <img class="modal-img" src="/imagenes/escaleras/escalera5.jpg" alt="escalera">
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>  -->
+
+
+
+
+
+
+            <!-- Puertas -->
+            <article class="col-12 col-lg-6  font-2 servicios-img">
+                <div>
+                    <a id="servicios-img2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                        class="d-flex justify-content-center">
+                        <div class="opacity">
+                            <img src="/imagenes/puertas/puerta4.jpg">
+                        </div>
+
+                        <p>Puertas</p>
+
+                    </a>
+                </div>
+            </article>
+
+            <!-- Modal Puertas -->
+            <!-- <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog d-flex justify-content-center">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="col-12 d-flex flex-column flex-wrap galeria">
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/puertas/puerta4.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/puertas/puerta3.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/puertas/puerta1b.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/puertas/vidrio3.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/puertas/vidrio1b.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/puertas/vidrio2.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/puertas/puertachica2.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Rejas -->
+            <article class="col-12 col-lg-6  font-2 servicios-img">
+                <div>
+                    <a id="servicios-img3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                        class="d-flex justify-content-center">
+                        <div class="opacity">
+                            <img " id=" servicios-img3" src="/imagenes/rejas/reja3.jpg">
+                        </div>
+
+                        <p>Rejas</p>
+
+                    </a>
+                </div>
+            </article>
+
+            <!-- Modal Rejas -->
+            <!-- <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog d-flex justify-content-center">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="col-12 d-flex flex-column flex-wrap galeria">
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/rejas/reja8b.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/rejas/reja2.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/rejas/reja1.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/rejas/reja3.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/rejas/reja4b.jpeg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/rejas/reja5b.jpeg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/rejas/reja7b.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/rejas/reja9b.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Mesas -->
+            <article class="col-12 col-lg-6  font-2 servicios-img">
+                <div>
+                    <a id="servicios-img5" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5"
+                        class="d-flex justify-content-center">
+                        <div class="opacity">
+                            <img id="servicios-img5" src="/imagenes/mesas/mesa7.jpg">
+                        </div>
+
+                        <p>Mesas</p>
+
+                    </a>
+                </div>
+            </article>
+
+            <!-- Modal Mesas -->
+            <!-- <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog d-flex justify-content-center">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="col-12 d-flex flex-column flex-wrap galeria">
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/mesas/mesa2.jpg" alt="mesa">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/mesas/mesa1.jpg" alt="mesa">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/mesas/mesa3.jpg" alt="mesa">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/mesas/mesa7.jpg" alt="mesa">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/mesas/mesa5.jpg" alt="mesa">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/mesas/mesa8.jpg" alt="mesa">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/mesas/mesa6.jpg" alt="mesa">
+                                    </div>
+                                </article>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Varios -->
+            <article class="col-12 col-lg-6  font-2 servicios-img">
+                <div>
+                    <a id="servicios-img4" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4"
+                        class="d-flex justify-content-center varios">
+                        <div class="opacity">
+                            <img id="servicios-img4" src="/imagenes/otros/madera1.jpg">
+                        </div>
+
+                        <p>Varios</p>
+
+                    </a>
+                </div>
+            </article>
+
+            <!-- Modal Varios -->
+            <!-- <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog d-flex justify-content-center">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="col-12 d-flex flex-column flex-wrap galeria">
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/otros/madera3.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/otros/madera1.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/otros/estanteria.png" alt="escalera">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12 ">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/otros/madera2.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/otros/otros1.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/otros/otros2.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/otros/otros3.jpeg" alt="escalera">
+                                    </div>
+                                </article>
+
+                                <article class="col-12 col-lg-12">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="/imagenes/otros/otros4b.jpg" alt="escalera">
+                                    </div>
+                                </article>
+
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+        <!-- IG -->
+        <section class="row  instagram--">
+            <article class="col-12 d-flex flex-column justify-content-center align-content-center text-center">
+
+                <h6 class="font-2">Seguinos en Instagram</h6>
+                <a class="font-2" href="https://www.instagram.com/laherreriaolivos" target="_blank">
+                    <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path
+                                d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z" />
+                            <path
+                                d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z" />
+                            <path
+                                d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z" />
+                        </g>
+                    </svg>
+                    laherreriaolivos
+                </a>
+            </article>
+        </section>
+
+
+
+        <!-- CONTACTO -->
+        <section class="row contacto d-flex justify-content-center" id="contacto">
+
+            <div class="col-12 d-flex flex-column align-items-center justify-content-center font-2">
+                <h2 class="animacionTitulo">CONTACTO</h2>
+
+            </div>
+
+            <div class="col-11 col-lg-10 d-flex flex-column flex-lg-row formulario">
+
+                <article class="d-flex flex-column  align-items-center col-12 col-lg-6 font-2 contacto-info">
+                    <div class="  d-flex flex-column  align-items-center ">
+
+
+                        <p class="text-center" id="animacion-contacto">¿Tenés una idea? <br> Contanos!</p>
+
+
+                        <svg class="herramientas-contacto-svg" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-hammer-wrench" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.11L5.63 12.81L2.11 9.25L2.81 8.55H5.62L4.22 7.14L7.78 3.58C8.95 2.41 10.83 2.41 12 3.58L9.89 5.74L11.3 7.14L10.59 7.85L12.38 9.63L14.2 7.75C14.06 7.42 14 7 14 6.63C14 4.66 15.56 3.11 17.5 3.11C18.09 3.11 18.61 3.25 19.08 3.53L16.41 6.2L17.91 7.7L20.58 5.03C20.86 5.5 21 6 21 6.63C21 8.55 19.45 10.1 17.5 10.1Z" />
+                        </svg>
+
+                        <div class="iconos  text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z" />
+                                <circle cx="12" cy="9" r="2.5" />
+                            </svg>
+                            <a>Buenos Aires, Argentina</a>
+                        </div>
+
+                        <div class="iconos  text-center">
+                            <a href="mailto:laherreriaolivos@gmail.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                    fill="#000000">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+                                </svg>
+
+                                laherreriaolivos@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="iconos  text-center">
+                            <a href="https://www.instagram.com/laherreriaolivos" target="_blank">
+                                <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1"
+                                    viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <path
+                                            d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z" />
+                                        <path
+                                            d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z" />
+                                        <path
+                                            d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z" />
+                                    </g>
+                                </svg>
+                                laherreriaolivos
+                            </a>
+                        </div>
+
+                        <br>
+
+
+                        <!-- <svg class="herramientas-contacto-svg" fill="white"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-hammer-wrench"  viewBox="0 0 24 24">
+                    <path
+                        d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.11L5.63 12.81L2.11 9.25L2.81 8.55H5.62L4.22 7.14L7.78 3.58C8.95 2.41 10.83 2.41 12 3.58L9.89 5.74L11.3 7.14L10.59 7.85L12.38 9.63L14.2 7.75C14.06 7.42 14 7 14 6.63C14 4.66 15.56 3.11 17.5 3.11C18.09 3.11 18.61 3.25 19.08 3.53L16.41 6.2L17.91 7.7L20.58 5.03C20.86 5.5 21 6 21 6.63C21 8.55 19.45 10.1 17.5 10.1Z"
+                    />
+                     </svg> -->
+
+                    </div>
+                </article>
+
+                <article class="d-flex flex-column   col-12 col-lg-6  font-2">
+                    <form action="https://formsubmit.co/laherreriaolivos@gmail.com" method="POST"
+                        class="d-flex flex-column">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
+                        <input type="hidden" name="_next" value="https://laherreriaolivos.ga/thankyou.html">
+
+                        <input class="form-control" name="nombre" type="name" placeholder="Nombre:" required>
+
+
+                        <input class="form-control" name="email" type="email" placeholder="Email:" required>
+
+
+                        <input class="form-control" name="asunto" type="text" placeholder="Asunto:" required>
+
+
+                        <textarea class="form-control" name="mensaje" cols="10" rows="8"
+                            placeholder="Mensaje:"></textarea>
+
+
+                        <div class="d-flex mt-3  mt-lg-3">
+                            <button type="submit" class="font-2">ENVIAR</button>
+                        </div>
+                    </form>
+
+                </article>
+            </div>
+
+        </section>
+
+  
+
+
+
+        <footer class="row d-flex justify-content-center font-2">
+            <p class="text-center">La Herrería Olivos - 2022</p>
+        </footer>
+
+
+    </main>
+
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+5491161589137", // WhatsApp number
+                call_to_action: "", // Call to action
+                button_color: "#FF6550", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+
+</body>
+
+</html>
